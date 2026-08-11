@@ -33,16 +33,21 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 pt-3 pb-2 px-4 sm:px-6 lg:px-8 bg-white/80 backdrop-blur-md border-b border-slate-100/80 transition-all duration-300">
       <div className="max-w-7xl mx-auto flex items-center justify-between gap-4 py-1">
         
-        {/* ── Brand Logo matching Image 2 ── */}
-        <Link href="/" className="flex items-center gap-3 group shrink-0">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-700 via-indigo-600 to-orange-500 p-0.5 shadow-md shadow-purple-500/20 group-hover:scale-105 transition-transform duration-300">
-            <div className="w-full h-full bg-white rounded-[10px] flex items-center justify-center font-black text-transparent bg-clip-text bg-gradient-to-tr from-purple-700 via-indigo-600 to-orange-500 text-xl font-display">
-              B
-            </div>
+        {/* ── Brand Logo with Uploaded Logo ── */}
+        <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group shrink-0 min-w-0">
+          <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-white border border-slate-200/90 p-1 shadow-md shadow-purple-500/10 group-hover:scale-105 transition-transform duration-300 shrink-0 flex items-center justify-center overflow-hidden">
+            <img
+              src={siteConfig.logo}
+              alt="Code AI Technology Logo"
+              className="w-full h-full object-contain"
+            />
           </div>
-          <div className="flex flex-col">
-            <span className="text-lg sm:text-xl font-black tracking-tight text-[#0F172A] font-display uppercase leading-none">
+          <div className="flex flex-col min-w-0">
+            <span className="text-sm sm:text-lg font-black tracking-tight text-[#0F172A] font-display uppercase leading-none truncate">
               CODE AI <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600">TECHNOLOGY</span>
+            </span>
+            <span className="text-[9px] sm:text-[10px] font-bold text-slate-400 tracking-widest uppercase mt-0.5">
+              TECHNOLOGY LLC
             </span>
           </div>
         </Link>
@@ -155,7 +160,7 @@ export default function Navbar() {
         {/* ── Mobile Toggle Button ── */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:text-purple-600 transition-colors"
+          className="md:hidden p-2 rounded-full bg-slate-100 border border-slate-200 text-slate-700 hover:text-purple-600 transition-colors shrink-0"
           aria-label="Toggle Navigation"
         >
           {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}

@@ -97,7 +97,7 @@ export default function AiRoiCalculator() {
                 <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
                   2. Select Project Scale
                 </label>
-                <div className="grid grid-cols-3 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                   {[
                     { id: "mvp", label: "Starter Scope" },
                     { id: "growth", label: "Enterprise Growth" },
@@ -106,7 +106,7 @@ export default function AiRoiCalculator() {
                     <button
                       key={item.id}
                       onClick={() => setScale(item.id)}
-                      className={`p-3 rounded-xl text-xs sm:text-sm font-semibold transition-all border ${
+                      className={`p-3 rounded-xl text-xs sm:text-sm font-semibold transition-all border text-center ${
                         scale === item.id
                           ? "bg-sky-500/20 border-sky-400 text-sky-300 shadow-sm"
                           : "bg-slate-950/70 border-slate-800 text-slate-400 hover:text-white"

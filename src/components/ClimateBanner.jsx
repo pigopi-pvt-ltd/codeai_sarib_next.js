@@ -44,19 +44,20 @@ export default function ClimateBanner() {
         </div>
 
         {/* Right CTA + Dismiss */}
-        <div className="flex items-center gap-3 shrink-0 pl-3 z-10">
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0 pl-1 sm:pl-3 z-10">
           <a
             href={siteConfig.climateUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-emerald-900 hover:text-emerald-950 font-black transition-colors flex items-center gap-1.5 text-xs sm:text-sm hover:underline bg-emerald-500/20 px-3.5 py-1.5 rounded-full border border-emerald-500/40 shadow-sm"
+            className="text-emerald-900 hover:text-emerald-950 font-black transition-colors flex items-center gap-1 text-[11px] sm:text-sm hover:underline bg-emerald-500/20 px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full border border-emerald-500/40 shadow-sm whitespace-nowrap"
           >
-            <span>Know How Much</span>
-            <ArrowUpRight className="w-4 h-4 text-emerald-800 stroke-[3]" />
+            <span className="hidden sm:inline">Know How Much</span>
+            <span className="sm:hidden">Know More</span>
+            <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-800 stroke-[3]" />
           </a>
           <button
             onClick={() => setDismissed(true)}
-            className="text-slate-600 hover:text-slate-950 p-1.5 rounded-full hover:bg-emerald-500/20 transition-colors"
+            className="text-slate-600 hover:text-slate-950 p-1 sm:p-1.5 rounded-full hover:bg-emerald-500/20 transition-colors"
             aria-label="Dismiss banner"
           >
             <X className="w-4 h-4 stroke-[2.5]" />

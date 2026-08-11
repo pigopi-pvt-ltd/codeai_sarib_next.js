@@ -24,14 +24,21 @@ export default function Footer() {
           {/* Column 1: Brand Logo & Social Icons */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-700 via-indigo-600 to-orange-500 p-0.5 shadow-md shadow-purple-500/20 group-hover:scale-105 transition-transform duration-300">
-                <div className="w-full h-full bg-[#080D1A] rounded-[10px] flex items-center justify-center font-black text-transparent bg-clip-text bg-gradient-to-tr from-purple-400 via-indigo-400 to-orange-400 text-xl font-display">
-                  B
-                </div>
+              <div className="w-11 h-11 rounded-xl bg-white p-1 shadow-md shadow-purple-500/20 group-hover:scale-105 transition-transform duration-300 flex items-center justify-center overflow-hidden shrink-0">
+                <img
+                  src={siteConfig.logo}
+                  alt="Code AI Technology Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
-              <span className="text-xl font-black text-white tracking-tight font-display uppercase">
-                CODE AI <span className="text-purple-400">TECHNOLOGY</span>
-              </span>
+              <div className="flex flex-col">
+                <span className="text-xl font-black text-white tracking-tight font-display uppercase leading-none">
+                  CODE AI <span className="text-purple-400">TECHNOLOGY</span>
+                </span>
+                <span className="text-[10px] font-bold text-slate-400 tracking-widest uppercase mt-1">
+                  TECHNOLOGY LLC
+                </span>
+              </div>
             </Link>
 
             <p className="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm">

@@ -5,7 +5,7 @@ export const siteConfig = {
   fullName: "CODE AI TECHNOLOGY LLC",
   parentCompany: "Code AI Technology LLC",
   dunsNumber: "104624462",
-  address: "1221 Van Ness Ave Fresno California 93721",
+  address: "2810 N Church St STE 89005 Wilmington, DE 19802",
   email: "info@codeaitechnology.com",
   phone: "+1 (877) 778-0304",
   climatePledge: "CODE AI TECHNOLOGY LLC will contribute 0.5% of your purchase to removing CO₂ from the atmosphere.",
@@ -13,11 +13,18 @@ export const siteConfig = {
   websiteUrl: "https://codeaitechnology.com",
   copyrightYear: "2026",
   copyright: "Copyright © 2026 All Right Reserved codeaitechnology.com",
+  logo: "/logo/logo.jpeg",
+  logoMark: "/logo/logo-mark.png",
+  favicon: "/logo/favicon.ico",
 };
 
 export const aboutContent = {
-  intro:
-    "At Code AI Technology, we believe that technology should empower-not complicate-your business. Founded with a vision to drive digital transformation, we are an IT consultancy firm committed to helping organizations leverage technology as a strategic advantage, not just a tool.",
+  intro: [
+    "At Code AI Technology, we believe that technology should empower—not complicate—your business. Founded with a vision to drive digital transformation, we are an IT consultancy firm committed to helping organizations leverage technology as a strategic advantage, not just a tool.",
+    "Our expertise spans custom software development, web applications, mobile app development, cloud solutions, AI integration, enterprise systems, and digital transformation services. We work closely with businesses of all sizes to understand their unique challenges and deliver innovative, scalable, and cost-effective technology solutions.",
+    "With a customer-centric approach and a passion for innovation, we focus on building reliable, secure, and future-ready digital products that drive growth, improve operational efficiency, and enhance customer experiences. Our team combines technical excellence with industry knowledge to transform ideas into impactful solutions.",
+    "At Code AI Technology, we don't just build software—we build long-term partnerships that help businesses adapt, grow, and succeed in an ever-evolving digital world. Whether you're a startup looking to launch a new product or an established enterprise seeking modernization, we are your trusted technology partner every step of the way.",
+  ],
   mission:
     "Code AI Technology moto to empower businesses by delivering innovative, reliable, and scalable IT solutions that drive digital transformation, enhance operational efficiency, and foster long-term growth. We are committed to providing expert consultancy, tailored strategies, and exceptional service to help our clients navigate the ever-evolving technology landscape.",
   purpose:

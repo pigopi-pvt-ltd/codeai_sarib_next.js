@@ -38,16 +38,16 @@ export default function ServiceDetailContent({ service }) {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 space-y-16 md:space-y-24 bg-[#FAF9FF] text-slate-900">
 
       {/* Top Breadcrumb Navigation */}
-      <nav className="inline-flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-slate-600 bg-white border border-slate-200/80 px-4 py-2 rounded-full shadow-sm">
+      <nav className="inline-flex items-center flex-wrap gap-2 sm:gap-2.5 text-xs sm:text-sm font-semibold text-slate-600 bg-white border border-slate-200/80 px-3.5 sm:px-4 py-2 rounded-2xl sm:rounded-full shadow-sm max-w-full">
         <Link href="/" className="hover:text-purple-600 transition-colors">
           Home
         </Link>
-        <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
+        <ChevronRight className="w-3.5 h-3.5 text-slate-400 shrink-0" />
         <Link href="/service" className="hover:text-purple-600 transition-colors">
           Services
         </Link>
-        <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
-        <span className="text-purple-700 font-bold">{service.title}</span>
+        <ChevronRight className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+        <span className="text-purple-700 font-bold break-words">{service.title}</span>
       </nav>
 
       {/* Hero Header Card - Premium Light Theme */}
