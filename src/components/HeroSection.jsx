@@ -178,61 +178,57 @@ export default function HeroSection() {
                 </div>
               </div>
 
-              {/* ── 4 Floating Stat Metric Cards matching Image 2 ── */}
+              {/* ── 4 Floating Feature Cards (Matching Mockup Image) ── */}
 
-              {/* Card 1: Top Left - Total Projects */}
-              <div className="absolute top-[-2%] left-[-2%] sm:top-[2%] sm:left-[-6%] z-30 bg-white/95 backdrop-blur-md rounded-2xl p-2 sm:p-3 shadow-[0_12px_30px_rgba(99,102,241,0.14)] border border-purple-100 flex flex-col gap-0.5 sm:gap-1 w-28 sm:w-36 animate-float">
-                <div className="flex items-center justify-between">
-                  <span className="text-[8px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-wider">Total Projects</span>
+              {/* Card 1: Top Left - Web Designing Solutions */}
+              <Link
+                href="/web-designing-solutions"
+                className="absolute -top-4 -left-2 sm:-top-8 sm:-left-10 z-30 bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-4 sm:p-5 shadow-[0_15px_35px_rgba(15,23,42,0.12)] border border-slate-100 flex flex-col w-36 sm:w-48 transition-transform duration-300 hover:scale-105 animate-float group cursor-pointer"
+              >
+                <span className="text-sm sm:text-xl font-extrabold text-slate-900 font-display leading-snug sm:leading-tight group-hover:text-purple-600 transition-colors">
+                  Web<br />
+                  Designing<br />
+                  Solutions
+                </span>
+                <div className="w-12 sm:w-16 h-1 sm:h-1.5 bg-gradient-to-r from-purple-600 via-indigo-600 to-purple-400 rounded-full mt-2 sm:mt-3" />
+              </Link>
+
+              {/* Card 2: Top Right - CRM */}
+              <Link
+                href="/crm"
+                className="absolute top-2 -right-2 sm:top-6 sm:-right-8 z-30 bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl px-4 py-2.5 sm:px-6 sm:py-4 shadow-[0_15px_35px_rgba(15,23,42,0.12)] border border-slate-100 transition-transform duration-300 hover:scale-105 animate-float-delayed group cursor-pointer"
+              >
+                <span className="text-sm sm:text-xl font-black text-slate-900 font-display group-hover:text-purple-600 transition-colors">
+                  CRM
+                </span>
+              </Link>
+
+              {/* Card 3: Bottom Left - Staffing */}
+              <Link
+                href="/staffing"
+                className="absolute bottom-16 -left-3 sm:bottom-20 sm:-left-10 z-30 bg-white/95 backdrop-blur-md rounded-full px-3.5 py-2 sm:px-5 sm:py-3 shadow-[0_12px_30px_rgba(15,23,42,0.10)] border border-slate-100 transition-transform duration-300 hover:scale-105 animate-float group cursor-pointer"
+              >
+                <span className="text-[9px] sm:text-xs font-black tracking-widest text-slate-400 uppercase font-display group-hover:text-purple-600 transition-colors">
+                  STAFFING
+                </span>
+              </Link>
+
+              {/* Card 4: Bottom Right - Digital Marketing with Teardrop Icon */}
+              <Link
+                href="/digital-marketing"
+                className="absolute -bottom-3 right-0 sm:-bottom-4 sm:-right-2 z-30 flex flex-col items-end transition-transform duration-300 hover:scale-105 animate-float-delayed group cursor-pointer"
+              >
+                <div className="mr-5 sm:mr-7 mb-1 text-emerald-500 animate-bounce">
+                  <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" />
+                  </svg>
                 </div>
-                <div className="flex items-baseline justify-between">
-                  <span className="text-base sm:text-xl font-black text-slate-900 font-display">128</span>
-                  <span className="text-[8px] sm:text-[10px] font-extrabold text-emerald-500 bg-emerald-50 px-1 py-0.5 rounded-full">
-                    +22.5%
+                <div className="bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl px-3.5 py-2.5 sm:px-6 sm:py-3.5 shadow-[0_15px_35px_rgba(15,23,42,0.12)] border border-slate-100">
+                  <span className="text-[9px] sm:text-xs font-black tracking-widest text-slate-400 uppercase font-display group-hover:text-purple-600 transition-colors">
+                    DIGITAL MARKETING
                   </span>
                 </div>
-                <div className="w-full h-1 bg-purple-100 rounded-full overflow-hidden mt-0.5 sm:mt-1">
-                  <div className="w-3/4 h-full bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full" />
-                </div>
-              </div>
-
-              {/* Card 2: Top Right - Active Users */}
-              <div className="absolute top-[4%] right-[-2%] sm:top-[10%] sm:right-[-6%] z-30 bg-white/95 backdrop-blur-md rounded-2xl p-2 sm:p-3 shadow-[0_12px_30px_rgba(99,102,241,0.14)] border border-purple-100 flex items-center gap-1.5 sm:gap-3 animate-float-delayed">
-                <div className="w-6 h-6 sm:w-9 sm:h-9 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center shrink-0">
-                  <Users className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
-                </div>
-                <div>
-                  <span className="text-[8px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Active Users</span>
-                  <div className="flex items-center gap-1">
-                    <span className="text-sm sm:text-lg font-black text-slate-900 font-display">2,540</span>
-                    <span className="text-[7px] sm:text-[9px] font-bold text-emerald-500">+15.3%</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Card 3: Middle Left - Happy Clients */}
-              <div className="absolute bottom-[26%] left-[-2%] sm:bottom-[32%] sm:left-[-8%] z-30 bg-white/95 backdrop-blur-md rounded-2xl p-2 sm:p-3 shadow-[0_12px_30px_rgba(99,102,241,0.14)] border border-purple-100 flex items-center gap-1.5 sm:gap-3 animate-float">
-                <div className="w-6 h-6 sm:w-9 sm:h-9 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center shrink-0">
-                  <Award className="w-3.5 h-3.5 sm:w-5 sm:h-5" />
-                </div>
-                <div>
-                  <span className="text-[8px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Happy Clients</span>
-                  <span className="text-sm sm:text-lg font-black text-slate-900 font-display">98% <span className="text-[8px] sm:text-[10px] text-slate-500 font-normal hidden sm:inline">Satisfaction</span></span>
-                </div>
-              </div>
-
-              {/* Card 4: Bottom Right - Success Rate */}
-              <div className="absolute bottom-[0%] right-[-2%] sm:bottom-[6%] sm:right-[-2%] z-30 bg-white/95 backdrop-blur-md rounded-2xl p-2 sm:p-3 shadow-[0_12px_30px_rgba(99,102,241,0.14)] border border-purple-100 flex items-center gap-1.5 sm:gap-3 animate-float-delayed">
-                <div className="w-6 h-6 sm:w-9 sm:h-9 rounded-full border-2 border-purple-600 border-t-orange-400 flex items-center justify-center text-[8px] sm:text-[10px] font-extrabold text-purple-700 bg-purple-50 shrink-0">
-                  99.6%
-                </div>
-                <div>
-                  <span className="text-[8px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-wider block">Success Rate</span>
-                  <span className="text-[9px] sm:text-xs font-extrabold text-emerald-600 flex items-center gap-0.5 sm:gap-1">
-                    <CheckCircle2 className="w-3 h-3" /> Verified
-                  </span>
-                </div>
-              </div>
+              </Link>
 
             </div>
           </div>
