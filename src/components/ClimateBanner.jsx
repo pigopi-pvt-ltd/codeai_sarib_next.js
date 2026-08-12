@@ -16,7 +16,7 @@ export default function ClimateBanner() {
   return (
     <div className="bg-emerald-500/10 backdrop-blur-md text-slate-900 border-b border-emerald-500/20 py-3 shadow-sm relative z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-3 relative">
-        
+
         {/* Left Green Leaf Badge */}
         <div className="hidden sm:flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/20 text-emerald-900 font-black text-xs uppercase tracking-wider shrink-0 border border-emerald-500/40">
           <div className="w-4 h-4 rounded-full bg-emerald-600 flex items-center justify-center">

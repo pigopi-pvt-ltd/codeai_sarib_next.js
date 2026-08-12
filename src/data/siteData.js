@@ -9,7 +9,7 @@ export const siteConfig = {
   email: "info@codeaitechnology.com",
   phone: "+1 (877) 778-0304",
   climatePledge: "CODE AI TECHNOLOGY LLC will contribute 0.5% of your purchase to removing CO₂ from the atmosphere.",
-  climateUrl: "https://climate.stripe.com/y1FuZK",
+  // climateUrl: "https://climate.stripe.com/y1FuZK",
   websiteUrl: "https://codeaitechnology.com",
   copyrightYear: "2026",
   copyright: "Copyright © 2026 All Right Reserved codeaitechnology.com",
